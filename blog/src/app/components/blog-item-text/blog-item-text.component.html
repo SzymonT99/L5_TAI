@@ -1,6 +1,9 @@
-<p>
+<h4 class="card-title">
+    {{ title }}
+</h4>
+<p class="card-text">
     {{ text | summary:35 }}
 </p>
-<a [routerLink]="['/blog/detail/1']">
+<a [routerLink]="['/blog/detail/', id]" class="btn btn-primary">
     Więcej
 </a>
